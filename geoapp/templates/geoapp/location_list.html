@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">  <!-- Définir la langue ici -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des localisations</title>
+</head>
+<body>
+    <h1>Localisations</h1>
+    <ul>
+        {% for location in locations %}
+            <li>{{ location.name }} - {{ location.point }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
